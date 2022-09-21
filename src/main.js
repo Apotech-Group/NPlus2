@@ -36,14 +36,15 @@ const dcidToName = {
         name: "Datacenter Z",
         shortname: "DC-Z"
     },
+    //non-datacenter rooms
+    PDU: {
+        name: "PDU gallery",
+        shortname: "PDU"
+    },
     MP4: {
         name: "MEP-4",
         shortname: "MEP-4"
     },
-    PDU: {
-        name: "PDU gallery",
-        shortname: "PDU"
-    }
 };
 
 document.body.onload = () => {
@@ -52,27 +53,7 @@ document.body.onload = () => {
     document.getElementById("DCID").innerText = getCookie("DCID");
 };
 
-document.getElementById("DCA").addEventListener("click", (_) => {
-    setCookie("DCID", "DCA", 1);
-    console.log("set DCID to DCA");
-});
-document.getElementById("DCB").addEventListener("click", (_) => {
-    setCookie("DCID", "DCB", 1);
-    console.log("set DCID to DCB");
-});
-document.getElementById("DCC").addEventListener("click", (_) => {
-    setCookie("DCID", "DCC", 1);
-    console.log("set DCID to DCC");
-});
-document.getElementById("DCZ").addEventListener("click", (_) => {
-    setCookie("DCID", "DCZ", 1);
-    console.log("set DCID to DCZ");
-});
-document.getElementById("PDU").addEventListener("click", (_) => {
-    setCookie("DCID", "PDU", 1);
-    console.log("set DCID to PDU");
-});
-document.getElementById("MP4").addEventListener("click", (_) => {
-    setCookie("DCID", "MP4", 1);
-    console.log("set DCID to MP4");
-});
+function setDCID(self) {
+    setCookie("DCID", self.id, 1);
+    console.log(`set DCID to ${self.id}`);
+}
