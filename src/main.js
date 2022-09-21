@@ -20,7 +20,7 @@ function getCookie(name) {
 }
 
 document.body.onload = () => {
-    getCookie("DCID") ? console.log(getCookie("DCID")) : console.log("no dcid set");
+    console.log(getCookie("DCID") ? getCookie(DCID) : "no dcid set");
 };
 
 document.getElementById("DCA").addEventListener("click", (_) => {
