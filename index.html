@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--font-awesome-->
+    <script src="https://kit.fontawesome.com/c75b7efa22.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="./node_modules/cirrus-ui/dist/cirrus-all.min.css">
+</head>
+
+<body>
+    <div class="row no-space">
+        <div class="col list-dropdown">
+            <button class="btn-primary btn-dropdown">
+                Location<span class="icon"><i class="fa fa-wrapper fa-caret-down"></i></span>
+            </button>
+            <ul class="menu">
+                <!--Datacenters-->
+                <li class="menu-item">
+                    <a href="&ID=DCA" id="DCA">Datacenter A</a>
+                </li>
+                <li class="menu-item">
+                    <a href="&ID=DCB" id="DCB">Datacenter B</a>
+                </li>
+                <li class="menu-item">
+                    <a href="&ID=DCC" id="DCC">Datacenter C</a>
+                </li>
+                <li class="menu-item">
+                    <a href="&ID=DCZ" id="DCZ">Datacenter Z</a>
+                </li>
+                <!--Other rooms-->
+                <li class="menu-item">
+                    <a href="&ID=PDU" id="PDU">PDU Gallery</a>
+                </li>
+                <li class="menu-item">
+                    <a href="&ID=MEP4" id="MEP4">MEP-4</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+</body>
+<script src="src/main.js"></script>
+
+</html>
