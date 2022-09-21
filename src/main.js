@@ -19,6 +19,33 @@ function getCookie(name) {
     return null;
 }
 
+const dcidToName = {
+    DCA: {
+        name: "Datacenter A",
+        shortname: "DC-A"
+    },
+    DCB: {
+        name: "Datacenter B",
+        shortname: "DC-B"
+    },
+    DCC: {
+        name: "Datacenter C",
+        shortname: "DC-C"
+    },
+    DCZ: {
+        name: "Datacenter Z",
+        shortname: "DC-Z"
+    },
+    MP4: {
+        name: "MEP-4",
+        shortname: "MEP-4"
+    },
+    PDU: {
+        name: "PDU gallery",
+        shortname: "PDU"
+    }
+};
+
 document.body.onload = () => {
     console.log(getCookie("DCID") ? getCookie("DCID") : "no dcid set");
     document.title = getCookie("DCID");
