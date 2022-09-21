@@ -49,8 +49,8 @@ const dcidToName = {
 
 document.body.onload = () => {
     console.log(getCookie("DCID") ? getCookie("DCID") : "no dcid set");
-    document.title = getCookie("DCID");
-    document.getElementById("DCID").innerText = getCookie("DCID");
+    document.title = dcidToName[getCookie("DCID")].shortname;
+    document.getElementById("DCID").innerText = dcidToName[getCookie("DCID")].shortname;
 };
 
 function setDCID(self) {

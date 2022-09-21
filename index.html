@@ -18,14 +18,24 @@
 </head>
 
 <body style="margin:0px; padding:0px">
-    <h1 id="DCID" class="uppercase bg-primary" style="
+    <h1 id="DCID" class="uppercase" style="
         position: absolute;
         display:block;
-        right:0vw;
+        left:0vw;
         top:0vw;
-        z-index: 999;">
+        width:100vw;
+        z-index: 999;
+        text-align: center;
+        pointer-events:none">
     </h1>
-    <div class="row btn-group bg-primary">
+    <h1 id="UNIT" class="uppercase bg-dark" style="
+        position:absolute;
+        display:block;
+        right:5vw;
+        top:30vh;
+        color:#FFF
+    ">&#8457;</h1>
+    <div class="row btn-group bg-primary h-10p">
         <div class="col list-dropdown bg-primary">
             <button class="btn-primary btn-dropdown">
                 Location<span class="icon"><i class="fa fa-wrapper fa-caret-down"></i></span>
@@ -58,6 +68,27 @@
                 CRAC/PDU<span class="icon"><i class="fa fa-wrapper fa-caret-down"></i></span>
             </button>
         </div>
+    </div>
+    <div class="row btn-group btn-group-fill bg-dark h-20p">
+        <button class="btn-dark col">+1</button>
+        <button class="btn-dark col">+5</button>
+        <button class="btn-dark col">+10</button>
+    </div>
+    <div class="h-40p bg-dark">
+        <h1 class="bg-dark font-light uppercase" style="
+            text-align: center;
+            vertical-align:center;
+            font-size: 30vh;
+            color:#FFF">93</h1>
+    </div>
+    <div class="row btn-group btn-group-fill bg-dark">
+        <button class="btn-dark col">-1</button>
+        <button class="btn-dark col">-5</button>
+        <button class="btn-dark col">-10</button>
+    </div>
+    <div class="row ignore-screen btn-group btn-group-fill bg-danger">
+        <button class="btn-danger btn--sm">Pastebin</button>
+        <button class="btn-danger btn--sm">Download</button>
     </div>
 </body>
 <script src="src/main.js"></script>
