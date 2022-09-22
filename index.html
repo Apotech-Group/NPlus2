@@ -37,7 +37,7 @@
         z-index: 999;
     ">&#8457;</h1>
     <div class="row bg-primary h-20p w-100p">
-        <h1>if you're seeing this message something is broken</h1>
+        <h2>if you're seeing this message something is broken</h2>
     </div>
     <div class="row btn-group bg-primary min-h-20p w-100p" style="position: fixed; top:0px">
         <div class="col list-dropdown bg-primary">
@@ -74,30 +74,33 @@
             <button class="btn-primary btn-dropdown">
                 CRAC/PDU<span class="icon"><i class="fa fa-wrapper fa-caret-down"></i></span>
             </button>
+            <ul id="deviceSelect" class="menu">
+
+            </ul>
         </div>
     </div>
-    <div class="row btn-group btn-group-fill bg-dark h-10p-lg">
+    <div id="ADDBUTTONS" class="row btn-group btn-group-fill bg-dark h-10p-lg">
         <button class="btn-dark col">+1</button>
         <button class="btn-dark col">+5</button>
         <button class="btn-dark col">+10</button>
     </div>
     <div class="h-30p bg-dark">
-        <h1 class="bg-dark font-light uppercase" style="
+        <h1 id="VALDISP" class="bg-dark font-light uppercase" style="
             text-align: center;
             vertical-align:center;
             font-size: 30vh;
             color:#FFF">93</h1>
     </div>
-    <div class="row btn-group btn-group-fill bg-dark">
+    <div id="SUBBUTTONS" class="row btn-group btn-group-fill h-20p bg-dark">
         <button class="btn-dark col">-1</button>
         <button class="btn-dark col">-5</button>
         <button class="btn-dark col">-10</button>
     </div>
-    <div class="row ignore-screen btn-group btn-group-fill bg-danger">
-        <button class="btn-danger btn--sm">Pastebin</button>
-        <button class="btn-danger btn--sm">Download</button>
+    <div class="row ignore-screen btn-group btn-group-fill bg-danger" style="height: 14.5vh;">
+        <button class="btn-danger btn--sm" style="height: 20vh;" id="PASTEXPORT">Export to Pastebin</button>
     </div>
 </body>
+<script src="src/constants.js"></script>
 <script src="src/main.js"></script>
 
 </html>
