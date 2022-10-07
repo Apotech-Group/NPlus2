@@ -1,9 +1,28 @@
-<vbox style="padding: 5px;">
+<vbox style="padding: 5px; width:100%; height:100%;">
     <style>
         .button {
             font-size: 20px;
         }
+        .vbox {
+            background-color:000000;
+        }
+        .tabview .tabbar-button {
+            font-size: 3vh;
+        }
+        .dropdown {
+            font-size: 5vh;
+        }
     </style>
-    <hbox>
-    </hbox>    
+    <tabview id="maintabs" width="100%" height="100%" styleName="full-width-buttons">
+        <box text="Select room" width="100%" height="100%">
+            <button text="Datacenter A" width="100%"/>
+        </box>
+        <box text="CRAC\n " width="100%" height="100%">
+        </box>
+        <box text="PDU" style="">
+            <vbox>
+
+            </vbox>
+        </box>
+    </tabview>   
 </vbox>
